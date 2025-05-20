@@ -48,8 +48,8 @@ a {
     color: white;
 }
 main {
-    position: fixed;
-    height: 47rem;
+    
+    height: 58rem;
     width: 100%;
     top: 4.6rem;
     overflow-y: auto;
@@ -169,8 +169,6 @@ button {
     cursor: pointer;
 }
 footer {
-    position: fixed;
-    bottom: 0;
     display: flex;
     justify-content: space-evenly;
     min-height: 4.5rem;
