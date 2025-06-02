@@ -1,6 +1,11 @@
 :root {
-    --blue: #2f4f88;
+    --blue: rgb(28, 49, 116, 1);
     --background: linear-gradient(
+        145deg,
+        rgba(12, 20, 34, 1) 0%,
+        rgba(47, 79, 136, 1) 100%
+    );
+    --background2: linear-gradient(
         145deg,
         rgba(47, 79, 136, 1) 0%,
         rgba(12, 20, 34, 1) 100%
@@ -10,29 +15,38 @@
         rgba(43, 96, 194, 1) 0%,
         rgba(27, 54, 102, 1) 100%
     );
+    --sb-track-color: #49494965;
+    --sb-thumb-color: #2f5088b4;
+    --sb-size: 8px;
 }
 header {
     position: fixed;
+    top: 0;
+    min-height: 5rem;
+    width: 100%;
+    background: url("../imgs/madeira.png"), var(--background2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+header div{
     display: flex;
     justify-content: space-between;
-    min-height: 4.5rem;
-    width: 100%;
-    border: 1px solid black;
-    padding: 0 15px;
-    background: var(--blue);
-    text-align: center;
     align-items: center;
+    margin: 0 3.75rem;
+    min-height: 5rem;
 }
 header img {
-    height: 64px;
-    width: 64px;
+    height: 54px;
+    width: 54px;
 }
 header ul {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
     max-width: 70%;
-    min-width: 50%;
+    min-width: 40%;
+    padding: 15px 0;
 }
 header button {
     background: none;
@@ -49,56 +63,71 @@ a {
     color: white;
 }
 main {
-    
-    height: 58rem;
     width: 100%;
-    top: 4.6rem;
+    margin-top: 5rem;
     overflow-y: auto;
-    --sb-track-color: #49494965;
-    --sb-thumb-color: #6baf8d;
-    --sb-size: 8px;
 }
 h2 {
     font-weight: 700;
     font-size: 20px;
 }
 section{
-    height: 47rem;
-    padding: 15px;
+    min-height: 45rem;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 span{
-    height: 400px;
-    width: 600px;
+    height: 18.75rem;
+    width: 37.5rem;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    justify-content: space-between;
     margin-left: 30px;
     line-height: 25px;
+}
+.main-div{
+    width: 60%;
+    display: flex;
+    padding: 1rem 3rem;
+    margin: 0 auto;
+    align-items: center;
+    border-radius: 8px;
+}
+#sobre div{
+    width: 60%;
+    display: flex;
+    padding: 1rem 3rem;
+    margin: 0 auto;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 2px 0px 14px 1px rgba(168,168,168,0.26);
+    -webkit-box-shadow: 2px 0px 14px 1px rgba(168,168,168,0.26);
+    -moz-box-shadow: 2px 0px 14px 1px rgba(168,168,168,0.26);
 }
 #sobre img {
     width: 500px;
     height: 400px;
 }
-#sobre button {
-    max-width: 200px;
+#sobre span{
+    min-height: 4rem;
+    justify-content: space-between;
 }
 #servicos {
-    background: var(--background);
+    background: url("../imgs/madeira.png"), var(--background);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
     color: white;
 }
 #servicos img {
     width: 500px;
     height: 400px;
 }
-#servicos span {
+#servicos div span {
     margin-right: 30px;
-    margin-left: 0;
 }
 #servicos button {
-    max-width: 200px;
+    align-self: self-end;
 }
 #avaliacoes {
     display: 1;
@@ -106,7 +135,10 @@ span{
     padding: 15px;
 }
 #helpUs {
-    background: var(--background);
+    background: url("../imgs/madeira.png"), var(--background2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
     color: white;
 }
 #helpUs span {
@@ -143,8 +175,10 @@ form button {
     border-radius: 0;
     width: 100%;
     margin-top: 25px;
+    max-width: 100%;
 }
 button {
+    display: flex;
     background: var(--backgroundButton);
     padding: 20px;
     font-size: 14px;
@@ -153,13 +187,19 @@ button {
     color: white;
     font-weight: 700;
     cursor: pointer;
+    max-width: 15rem;
+    justify-content: center;
+    align-items: center;
 }
 footer {
     display: flex;
     justify-content: space-evenly;
     min-height: 4.5rem;
     width: 100%;
-    background: var(--blue);
+    background: url("../imgs/madeira.png"), var(--background);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
     text-align: center;
     align-items: baseline;
     color: white;
@@ -188,14 +228,14 @@ footer li {
 .redes li {
     margin-top: 0px;
 }
-main::-webkit-scrollbar {
+*::-webkit-scrollbar {
     width: var(--sb-size);
 }
-main::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     background: var(--sb-track-color);
 }
-main::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     background: var(--sb-thumb-color);
-    border-radius: 12px;
+    /* border-radius: 12px; */
     border: transparent;
 }

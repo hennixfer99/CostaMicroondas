@@ -4,62 +4,69 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Costa Microondas</title>
+        <link rel="shortcut icon" href="../imgs/logo.svg" type="image/x-icon" />
         <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="style.css" />
         <link href="script.js" />
     </head>
     <body>
         <header>
-            <img src="../imgs/logo.png" />
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#avaliacoes">Avaliações</a></li>
-                <li>
-                    <button
-                        onclick="location.href = 'https://w.app/costamicroondas'"
-                    >
-                        Faça seu orçamento
-                    </button>
-                </li>
-            </ul>
+            <div>
+                <img src="../imgs/logo.svg" />
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#avaliacoes">Avaliações</a></li>
+                    <li>
+                        <button
+                            onclick="location.href = 'https://w.app/costamicroondas'"
+                        >
+                            Faça seu orçamento
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </header>
         <main>
             <section id="sobre">
-                <img src="../test/500x300.svg" alt="Sobre nós" />
-                <span>
-                    <h2>Quem somos</h2>
-                    <p>
-                        A Costa Microondas atua no mercado há mais de 10 anos,
-                        mantendo a qualidade no atendimento, e a competência em
-                        cada conserto realizado. Valorizamos e respeitamos cada
-                        residência visitada, pois é por esse motivo que nossos
-                        clientes se tornam amigos e parceiros mantendo boas
-                        indicações.
-                    </p>
-                    <button>Saiba mais</button>
-                </span>
+                <div class="squares">
+                    <img src="../test/500x300.svg" alt="Sobre nós" />
+                    <span>
+                        <h2>Quem somos</h2>
+                        <p>
+                            A Costa Microondas atua no mercado há mais de 10
+                            anos, mantendo a qualidade no atendimento, e a
+                            competência em cada conserto realizado. Valorizamos
+                            e respeitamos cada residência visitada, pois é por
+                            esse motivo que nossos clientes se tornam amigos e
+                            parceiros mantendo boas indicações.
+                        </p>
+                        <button>Saiba mais</button>
+                    </span>
+                </div>
             </section>
             <section id="servicos">
-                <span>
-                    <h2>Serviços</h2>
-                    <p>
-                        Nossa visão técnica e empreendedora percebeu que muitos
-                        clientes não tiveram boas experiências consertos
-                        anteriores. Tomando as dores dos nossos clientes
-                        decidimos investir em qualidade de atendimento, e
-                        comodidade para que nossos clientes não precisem sair do
-                        conforto de sua casa, obtendo seu eletrodoméstico
-                        consertado com preço justo e com uma experiência única
-                        profissional. Trabalhamos com conserto, limpeza e
-                        restauração de micro-ondas.
-                    </p>
-                    <button>Conheça nossos serviços</button>
-                </span>
-                <img
-                    src="../test/500x300.svg"
-                    alt="Um pouco mais sobre nossos serviços"
-                />
+                <div class="main-div">
+                    <span>
+                        <h2>Serviços</h2>
+                        <p>
+                            Nossa visão técnica e empreendedora percebeu que
+                            muitos clientes não tiveram boas experiências
+                            consertos anteriores. Tomando as dores dos nossos
+                            clientes decidimos investir em qualidade de
+                            atendimento, e comodidade para que nossos clientes
+                            não precisem sair do conforto de sua casa, obtendo
+                            seu eletrodoméstico consertado com preço justo e com
+                            uma experiência única profissional. Trabalhamos com
+                            conserto, limpeza e restauração de micro-ondas.
+                        </p>
+                        <button>Conheça nossos serviços</button>
+                    </span>
+                    <img
+                        src="../test/500x300.svg"
+                        alt="Um pouco mais sobre nossos serviços"
+                    />
+                </div>
             </section>
             <section id="avaliacoes">
                 <h2>Nossas Avaliações</h2>
@@ -70,34 +77,37 @@
                 </span>
             </section>
             <section id="helpUs">
-                <form method="post">
-                    <label for="name">Nome:</label>
-                    <input id="name" placeholder="Nome completo" />
-                    <label for="phone">Telefone:</label>
-                    <input id="phone" placeholder="(XX) XXXXX-XXXX" />
-                    <label for="email">E-mail:</label>
-                    <input id="email" placeholder="exemplo@mail.com" />
-                    <label for="message">Mensagem:</label>
-                    <input id="message" placeholder="Mensagem..." />
-                    <button>Enviar</button>
-                </form>
-                <span>
-                    <h2>Nos ajude a melhorar!</h2>
-                    <p>
-                        Na Costa Micro-ondas, buscamos constantemente aprimorar
-                        nossos produtos e serviços para oferecer a você mais
-                        qualidade, eficiência e praticidade. Para isso,
-                        acreditamos que ouvir nossos clientes é essencial. Este
-                        espaço foi criado para que você compartilhe sua opinião
-                        sobre sua experiência com nossos micro-ondas — seja em
-                        relação ao funcionamento, design, atendimento ou suporte
-                        técnico. Suas sugestões são analisadas com atenção e
-                        contribuem diretamente para a melhoria dos nossos
-                        processos e soluções. Agradecemos por dedicar seu tempo
-                        e por ajudar a Costa Micro-ondas a evoluir
-                        continuamente. Sua colaboração faz a diferença.
-                    </p>
-                </span>
+                <div class="main-div">
+                    <form method="post">
+                        <label for="name">Nome:</label>
+                        <input id="name" placeholder="Nome completo" />
+                        <label for="phone">Telefone:</label>
+                        <input id="phone" placeholder="(XX) XXXXX-XXXX" />
+                        <label for="email">E-mail:</label>
+                        <input id="email" placeholder="exemplo@mail.com" />
+                        <label for="message">Mensagem:</label>
+                        <input id="message" placeholder="Mensagem..." />
+                        <button>Enviar</button>
+                    </form>
+                    <span>
+                        <h2>Nos ajude a melhorar!</h2>
+                        <p>
+                            Na Costa Micro-ondas, buscamos constantemente
+                            aprimorar nossos produtos e serviços para oferecer a
+                            você mais qualidade, eficiência e praticidade. Para
+                            isso, acreditamos que ouvir nossos clientes é
+                            essencial. Este espaço foi criado para que você
+                            compartilhe sua opinião sobre sua experiência com
+                            nossos micro-ondas — seja em relação ao
+                            funcionamento, design, atendimento ou suporte
+                            técnico. Suas sugestões são analisadas com atenção e
+                            contribuem diretamente para a melhoria dos nossos
+                            processos e soluções. Agradecemos por dedicar seu
+                            tempo e por ajudar a Costa Micro-ondas a evoluir
+                            continuamente. Sua colaboração faz a diferença.
+                        </p>
+                    </span>
+                </div>
             </section>
         </main>
         <footer>
@@ -123,9 +133,7 @@
                 <ul>
                     <li>
                         <img src="../imgs/whats.svg" alt="Nosso WhatsApp" />
-                        <a href="https://w.app/macaquinho"
-                            >(13) 98863-6171</a
-                        >
+                        <a href="https://w.app/macaquinho">(13) 98863-6171</a>
                     </li>
                     <li>
                         <img src="../imgs/insta.svg" alt="Nosso instagram" />
