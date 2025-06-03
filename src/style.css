@@ -19,6 +19,7 @@
     --sb-thumb-color: #2f5088b4;
     --sb-size: 8px;
 }
+
 header {
     position: fixed;
     top: 0;
@@ -28,8 +29,10 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: overlay;
+    z-index: 1;
+    font-size: 20px;
 }
-header div{
+header div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,6 +50,7 @@ header ul {
     max-width: 70%;
     min-width: 40%;
     padding: 15px 0;
+    font-weight: 600;
 }
 header button {
     background: none;
@@ -57,26 +61,44 @@ header button {
     box-shadow: 0px 7px 16px 1px rgba(0, 0, 0, 0.35);
     -webkit-box-shadow: 0px 7px 16px 1px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 0px 7px 16px 1px rgba(0, 0, 0, 0.35);
+        font-size: 16px;
+
 }
+header a {
+  color: #fff;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color gi;
+}
+header a:hover{
+      text-decoration-color: rgba(255, 255, 255, 1);
+
+}
+
 a {
     text-decoration: none;
     color: white;
 }
+
 main {
     width: 100%;
     margin-top: 5rem;
     overflow-y: auto;
+    font-size: 20px;
 }
 h2 {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 28px;
 }
-section{
+section {
     min-height: 45rem;
     display: flex;
     align-items: center;
+    background-image: url("../imgs/listras.png"), url("../imgs/listras1.png");
+    background-repeat: no-repeat;
+    background-position-y: -10%, 140%;
+    background-position-x: 0, 107%;
 }
-span{
+span {
     height: 18.75rem;
     width: 37.5rem;
     display: flex;
@@ -85,7 +107,7 @@ span{
     margin-left: 30px;
     line-height: 25px;
 }
-.main-div{
+.main-div {
     width: 60%;
     display: flex;
     padding: 1rem 3rem;
@@ -93,22 +115,22 @@ span{
     align-items: center;
     border-radius: 8px;
 }
-#sobre div{
+#sobre div {
     width: 60%;
     display: flex;
     padding: 1rem 3rem;
     margin: 0 auto;
     align-items: center;
     border-radius: 8px;
-    box-shadow: 2px 0px 14px 1px rgba(168,168,168,0.26);
-    -webkit-box-shadow: 2px 0px 14px 1px rgba(168,168,168,0.26);
-    -moz-box-shadow: 2px 0px 14px 1px rgba(168,168,168,0.26);
+    box-shadow: 2px 0px 14px 1px rgba(168, 168, 168, 0.26);
+    -webkit-box-shadow: 2px 0px 14px 1px rgba(168, 168, 168, 0.26);
+    -moz-box-shadow: 2px 0px 14px 1px rgba(168, 168, 168, 0.26);
 }
 #sobre img {
     width: 500px;
     height: 400px;
 }
-#sobre span{
+#sobre span {
     min-height: 4rem;
     justify-content: space-between;
 }
@@ -118,6 +140,7 @@ span{
     background-size: cover;
     background-blend-mode: overlay;
     color: white;
+    z-index: 1;
 }
 #servicos img {
     width: 500px;
@@ -130,7 +153,10 @@ span{
     align-self: self-end;
 }
 #avaliacoes {
-    display: 1;
+    background-image: url("../imgs/listra3.png"), url("../imgs/listras2.png");
+    background-repeat: no-repeat;
+    background-position-y: -30%, 140%;
+    background-position-x: 107%, -5%;
     height: 47rem;
     padding: 15px;
 }
@@ -191,6 +217,12 @@ button {
     justify-content: center;
     align-items: center;
 }
+.gap {
+    height: 10rem;
+    background: url("../imgs/listras4.png");
+    background-repeat: no-repeat;
+    background-position-y: 6rem;
+}
 footer {
     display: flex;
     justify-content: space-evenly;
@@ -200,33 +232,56 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: overlay;
-    text-align: center;
-    align-items: baseline;
     color: white;
-    padding: 10px 0;
+}
+footer section {
+    background-image: none;
 }
 footer span {
     display: flex;
-    justify-content: center;
-    column-gap: 10px;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
+    max-width: 16rem;
+}
+.footer-box-1 {
+    min-height: 30rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer h2 {
+    display: flex;
+    align-items: center;
+}
+footer h2 img {
+    max-width: 20px;
 }
 .footerText {
     width: 15%;
     margin: auto 0;
+    font-size: 20px;
 }
 footer li {
     display: flex;
     align-items: center;
     column-gap: 5px;
     margin-top: 10px;
+    font-size: 20px;
+}
+footer img {
+    width: 34px;
+    margin-left: 10px;
+}
+.redes {
+    min-height: 30rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .redes img {
     width: 34px;
     height: 34px;
-}
-.redes li {
-    margin-top: 0px;
 }
 *::-webkit-scrollbar {
     width: var(--sb-size);
@@ -238,4 +293,20 @@ footer li {
     background: var(--sb-thumb-color);
     /* border-radius: 12px; */
     border: transparent;
+}
+.listras {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+.listras1 {
+    position: absolute;
+    right: -6rem;
+    bottom: -2rem;
+    z-index: -1;
+}
+.listras2 {
+    position: absolute;
+    top: 10.8rem;
+    z-index: -1;
 }
