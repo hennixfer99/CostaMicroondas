@@ -7,19 +7,19 @@
         <link rel="shortcut icon" href="../imgs/logo.svg" type="image/x-icon" />
         <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="style.css" />
-        <link href="script.js" />
     </head>
     <body>
         <header>
             <div>
-                <img src="../imgs/logo.svg" />
+                <img loading="lazy" src="../imgs/logo.svg" />
                 <ul>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#servicos">Serviços</a></li>
                     <li><a href="#avaliacoes">Avaliações</a></li>
+                    <li><a href="#helpUs">Nos ajude a melhorar</a></li>
                     <li>
                         <button
-                            onclick="location.href = 'https://w.app/costamicroondas'"
+                            onclick="location.href = 'https://api.whatsapp.com/send?phone=5513988636171&text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20fazer%20meu%20or%C3%A7amento.'"
                         >
                             Faça seu orçamento
                         </button>
@@ -28,20 +28,47 @@
             </div>
         </header>
         <main>
+            <span id="nova-guia" class="sr-only"
+                >O link será aberto em outra guia</span
+            >
             <section id="sobre">
                 <div class="squares">
-                    <img src="../test/500x300.svg" alt="Sobre nós" />
+                    <img
+                        loading="lazy"
+                        src="../imgs/servicos.jpeg"
+                        alt="Sobre nós"
+                    />
                     <span>
                         <h2>Quem somos</h2>
                         <p>
-                            A Costa Microondas atua no mercado há mais de 10
-                            anos, mantendo a qualidade no atendimento, e a
-                            competência em cada conserto realizado. Valorizamos
-                            e respeitamos cada residência visitada, pois é por
-                            esse motivo que nossos clientes se tornam amigos e
-                            parceiros mantendo boas indicações.
+                            Com mais de 10 anos de história, a Costa Micro-ondas
+                            nasceu da paixão por eletrodomésticos, eletrônicos e
+                            do compromisso em oferecer soluções confiáveis para
+                            o seu eletrodoméstico. Nossa equipe técnica
+                            altamente qualificada garante a competência em cada
+                            conserto, utilizando peças de alta qualidade e as
+                            melhores práticas do mercado para assegurar a
+                            durabilidade do seu aparelho. Valorizamos
+                            profundamente o respeito e a atenção em cada
+                            residência que visitamos. É por isso que nosso
+                            atendimento é sempre atencioso e profissional,
+                            construindo laços de amizade e parcerias duradouras
+                            com nossos clientes, que se tornam nossos maiores
+                            promotores através de indicações valiosas. Nossa
+                            Missão: Oferecer serviços de conserto de micro-ondas
+                            com excelência, qualidade e comodidade, superando as
+                            expectativas de nossos clientes. Nossa Visão: Ser a
+                            empresa de referência em conserto de micro-ondas na
+                            região, reconhecida pela confiabilidade,
+                            profissionalismo e atendimento diferenciado.
                         </p>
-                        <button>Saiba mais</button>
+                        <button
+                            onClick="window.open('https://www.instagram.com/costa_microondas/', '_blank')"
+
+                            aria-label="Abrir nosso instagram em outra guia"
+                        >
+                            Saiba mais
+                        </button>
                     </span>
                 </div>
             </section>
@@ -50,39 +77,101 @@
                     <span>
                         <h2>Serviços</h2>
                         <p>
-                            Nossa visão técnica e empreendedora percebeu que
-                            muitos clientes não tiveram boas experiências
-                            consertos anteriores. Tomando as dores dos nossos
-                            clientes decidimos investir em qualidade de
-                            atendimento, e comodidade para que nossos clientes
-                            não precisem sair do conforto de sua casa, obtendo
-                            seu eletrodoméstico consertado com preço justo e com
-                            uma experiência única profissional. Trabalhamos com
-                            conserto, limpeza e restauração de micro-ondas.
+                            A Costa Micro-ondas entende a frustração de lidar
+                            com um micro-ondas quebrado e serviços ruins. Por
+                            isso, oferecemos atendimento de excelência com
+                            conserto em domicílio, para sua total comodidade.
+                            Nossos serviços incluem: Conserto: Solução para
+                            qualquer problema — falhas no aquecimento, painel,
+                            ruídos e questões eletrônicas. Limpeza: Higienização
+                            interna e externa, eliminando sujeira e odores.
+                            Restauração: Recuperação estética e funcional, com
+                            troca de peças e revitalização completa. Benefícios
+                            ao escolher a Costa Micro-ondas: Atendimento em casa
+                            e orçamento gratuito Serviço transparente e
+                            profissional Pagamento facilitado: Dinheiro, Pix ou
+                            Cartão Limpeza inclusa para garantir higiene Dicas
+                            de uso e conservação durante a visita técnica
                         </p>
-                        <button>Conheça nossos serviços</button>
+                        <button
+                            onclick="location.href = 'https://api.whatsapp.com/send?phone=5513988636171&text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os.'"
+
+                            aria-label="Abrir mensagem automatica para nosso WhatsApp em outra guia"
+                        >
+                            Conheça nossos serviços
+                        </button>
                     </span>
-                    <img
-                        src="../test/500x300.svg"
-                        alt="Um pouco mais sobre nossos serviços"
-                    />
+                    <span>
+                        <h2>Serviços oferecidos:</h2>
+                        <ul>
+                            <li>
+                                Conserto: Soluções para todos os tipos de
+                                problemas, como falhas no aquecimento, painel,
+                                ruídos e questões eletrônicas.
+                            </li>
+                            <li>
+                                Limpeza: Higienização interna e externa,
+                                eliminando sujeira, gordura, restos de alimentos
+                                e odores.
+                            </li>
+                            <li>
+                                Restauração: Recuperação estética e funcional,
+                                com troca de peças danificadas e revitalização
+                                do aparelho.
+                            </li>
+                        </ul>
+                        <h2>Benefícios de escolher a Costa Micro-ondas:</h2>
+                        <ul>
+                            <li>
+                                Comodidade total: Orçamento gratuito e serviço
+                                realizado diretamente na sua casa.
+                            </li>
+                            <li>
+                                Transparência e confiança: Atendimento
+                                profissional, com orçamento detalhado e sem
+                                surpresas.
+                            </li>
+                            <li>
+                                Facilidade de pagamento: Aceitamos Dinheiro, Pix
+                                e Cartão de Crédito.
+                            </li>
+                            <li>
+                                Cuidado completo: Serviço de limpeza incluso
+                                para garantir o bom funcionamento do seu
+                                micro-ondas.
+                            </li>
+                            <li>
+                                Orientação especializada: Dicas de uso e
+                                conservação durante a visita técnica.
+                            </li>
+                        </ul>
+                    </span>
                 </div>
             </section>
             <section id="avaliacoes">
                 <h2>Nossas Avaliações</h2>
                 <span>
-                    <img />
+                    <img loading="lazy" />
                     <h3></h3>
                     <p></p>
                 </span>
             </section>
             <section id="helpUs">
                 <div class="main-div">
-                    <form method="post">
+                    <form
+                        action="https://formsubmit.co/Henriferreira99gmail.com"
+                        method="post"
+                    >
                         <label for="name">Nome:</label>
                         <input id="name" placeholder="Nome completo" />
                         <label for="phone">Telefone:</label>
-                        <input id="phone" placeholder="(XX) XXXXX-XXXX" />
+                        <input
+                            id="phone"
+                            placeholder="(XX)XXXXX-XXXX"
+                            type="tel"
+                            minlength="15"
+                            maxlength="15"
+                        />
                         <label for="email">E-mail:</label>
                         <input id="email" placeholder="exemplo@mail.com" />
                         <label for="message">Mensagem:</label>
@@ -113,14 +202,17 @@
         <div class="gap"></div>
         <footer>
             <section class="footer-box-1">
-                    <h2>Buscamos em domicilio <img src="../imgs/truck.png" /></h2>
+                <h2>
+                    Buscamos em domicilio
+                    <img loading="lazy" src="../imgs/truck.png" />
+                </h2>
                 <ul class="checks">
                     <li>
-                        <img src="../imgs/checkbox.svg" alt="" />
+                        <img loading="lazy" src="../imgs/checkbox.svg" alt="" />
                         <p>Consertos e reparos de fornos microondas</p>
                     </li>
                     <li>
-                        <img src="../imgs/checkbox.svg" alt="" />
+                        <img loading="lazy" src="../imgs/checkbox.svg" alt="" />
                         <p>Restaurações, pintura e limpeza especializada</p>
                     </li>
                 </ul>
@@ -130,11 +222,19 @@
                 <h2>Nossas redes:</h2>
                 <ul>
                     <li>
-                        <img src="../imgs/whats.svg" alt="Nosso WhatsApp" />
+                        <img
+                            loading="lazy"
+                            src="../imgs/whats.svg"
+                            alt="Nosso WhatsApp"
+                        />
                         <a href="https://w.app/macaquinho">(13) 98863-6171</a>
                     </li>
                     <li>
-                        <img src="../imgs/insta.svg" alt="Nosso instagram" />
+                        <img
+                            loading="lazy"
+                            src="../imgs/insta.svg"
+                            alt="Nosso instagram"
+                        />
                         <a href="https://www.instagram.com/costa_microondas/"
                             >@costa_microondas</a
                         >
@@ -143,4 +243,5 @@
             </section>
         </footer>
     </body>
+    <script src="script.js"></script>
 </html>

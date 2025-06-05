@@ -1,18 +1,33 @@
-  const API =
-      "https://mybusiness.googleapis.com/v4/{parent=Costa+microondas+praia+grande/*/locations/*}/reviews";
-  
-  
-  API.then(response => {
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+const phoneInput = document.getElementById("phone");
+
+phoneInput.addEventListener("input", function (e) {
+    let value = e.target.value.replace(/\D/g, "");
+
+    if (value.length > 11) value = value.slice(0, 11);
+
+    if (value.length > 6) {
+        value = `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7)}`;
+    } else if (value.length > 2) {
+        value = `(${value.slice(0, 2)}) ${value.slice(2)}`;
+    } else if (value.length > 0) {
+        value = `(${value}`;
     }
-    return response.json(); // or response.text(), response.blob(), etc.
-  })
-  .then(data => {
-    // Process the data
-    console.log(data);
-  })
-  .catch(error => {
-    // Handle errors
-    console.error("Fetch error:", error);
-  });
+
+    console.log(value.length)
+    e.target.value = value;
+});
+phoneInput.addEventListener("keydown", function (e) {
+    const key = e.key;
+    if (key === "Backspace") {
+        const value = e.target.value;
+        const pos = e.target.selectionStart;
+
+        if (pos && value[pos - 1] === "-") {
+            e.target.setSelectionRange(pos - 1, pos - 1);
+        }
+
+        if (pos && [" ", ")", "("].includes(value[pos - 1])) {
+            e.target.setSelectionRange(pos - 1, pos - 1);
+        }
+    }
+});
