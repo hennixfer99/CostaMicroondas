@@ -64,7 +64,6 @@
                         </p>
                         <button
                             onClick="window.open('https://www.instagram.com/costa_microondas/', '_blank')"
-
                             aria-label="Abrir nosso instagram em outra guia"
                         >
                             Saiba mais
@@ -95,7 +94,6 @@
                         </p>
                         <button
                             onclick="location.href = 'https://api.whatsapp.com/send?phone=5513988636171&text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os.'"
-
                             aria-label="Abrir mensagem automatica para nosso WhatsApp em outra guia"
                         >
                             Conheça nossos serviços
@@ -149,12 +147,13 @@
                 </div>
             </section>
             <section id="avaliacoes">
-                <h2>Nossas Avaliações</h2>
+                <div id="google-reviews"></div>
+                <!-- <h2>Nossas Avaliações</h2>
                 <span>
                     <img loading="lazy" />
                     <h3></h3>
                     <p></p>
-                </span>
+                </span> -->
             </section>
             <section id="helpUs">
                 <div class="main-div">
@@ -203,10 +202,13 @@
         <footer>
             <section class="footer-box-1">
                 <h2>
-                    Buscamos em domicilio
-                    <img loading="lazy" src="../imgs/truck.png" />
+                    Temos a solução para o seu problema!
                 </h2>
                 <ul class="checks">
+                    <li>
+                        <img loading="lazy" src="../imgs/checkbox.svg" alt="" />
+                        <p>Buscamos em domicilio</p> <img class="footer-img" loading="lazy" src="../imgs/truck.png" />
+                    </li>
                     <li>
                         <img loading="lazy" src="../imgs/checkbox.svg" alt="" />
                         <p>Consertos e reparos de fornos microondas</p>
@@ -227,7 +229,10 @@
                             src="../imgs/whats.svg"
                             alt="Nosso WhatsApp"
                         />
-                        <a href="https://w.app/macaquinho">(13) 98863-6171</a>
+                        <a
+                            href="https://api.whatsapp.com/send?phone=5513988636171&text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20fazer%20meu%20or%C3%A7amento."
+                            >(13) 98863-6171</a
+                        >
                     </li>
                     <li>
                         <img

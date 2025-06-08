@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Dynalight&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 :root {
     --blue: rgb(28, 49, 116, 1);
     --background: linear-gradient(
@@ -18,8 +19,8 @@
     --sb-track-color: #49494965;
     --sb-thumb-color: #2f5088b4;
     --sb-size: 8px;
+    font-family: "Inter";
 }
-
 header {
     position: fixed;
     top: 0;
@@ -30,7 +31,7 @@ header {
     background-size: cover;
     background-blend-mode: overlay;
     z-index: 1;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 header div {
     display: flex;
@@ -47,8 +48,8 @@ header ul {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    max-width: 70%;
-    min-width: 40%;
+    max-width: 100%;
+    min-width: 75%;
     padding: 15px 0;
     font-weight: 600;
 }
@@ -61,7 +62,8 @@ header button {
     box-shadow: 0px 7px 16px 1px rgba(0, 0, 0, 0.35);
     -webkit-box-shadow: 0px 7px 16px 1px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 0px 7px 16px 1px rgba(0, 0, 0, 0.35);
-    font-size: 16px;
+    font-size: 1rem;
+    margin: 0;
 }
 a {
     text-decoration: none;
@@ -76,14 +78,17 @@ main {
     width: 100%;
     margin-top: 5rem;
     overflow-y: auto;
-    font-size: 18px;
 }
 h2 {
     font-weight: 700;
-    font-size: 26px;
+    font-size: 1.5rem;
+}
+p,
+li {
+    font-size: 1rem;
 }
 section {
-    min-height: 45rem;
+    min-height: 50rem;
     display: flex;
     align-items: center;
     background-image: url("../imgs/listras.png"), url("../imgs/listras1.png");
@@ -92,8 +97,8 @@ section {
     background-position-x: 0, 107%;
 }
 span {
-    height: 18.75rem;
-    width: 37.5rem;
+    min-width: 20rem;
+    max-width: 37.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -105,6 +110,7 @@ span {
     display: flex;
     padding: 1rem 3rem;
     margin: 0 auto;
+    justify-content: center;
     align-items: center;
 }
 #sobre div {
@@ -113,6 +119,7 @@ span {
     padding: 1rem 3rem;
     margin: 0 auto;
     align-items: center;
+    justify-content: center;
     border-radius: 8px;
     box-shadow: 2px 0px 14px 1px rgba(168, 168, 168, 0.26);
     -webkit-box-shadow: 2px 0px 14px 1px rgba(168, 168, 168, 0.26);
@@ -137,16 +144,11 @@ span {
     z-index: 1;
 }
 #servicos div span {
-    margin-right: 30px;
+    margin: 0 30px;
     min-height: 450px;
-    justify-content: space-between;
-}
-#servicos span p {
-    font-size: 18px;
 }
 #servicos span li {
-    font-size: 18px;
-    margin: 3px 0 3px 3%;
+    margin: 3px 0 3px 5%;
     list-style: disc;
     line-height: 1.25;
 }
@@ -210,7 +212,7 @@ button {
     display: flex;
     background: var(--backgroundButton);
     padding: 20px;
-    font-size: 14px;
+    font-size: 0.875rem;
     border-radius: 16px;
     border: transparent;
     color: white;
@@ -236,6 +238,7 @@ footer {
     background-size: cover;
     background-blend-mode: overlay;
     color: white;
+    align-items: baseline;
 }
 footer section {
     background-image: none;
@@ -253,24 +256,18 @@ footer span {
     justify-content: center;
     align-items: center;
 }
-footer h2 {
-    display: flex;
-    align-items: center;
-}
-footer h2 img {
+.footer-img{
     max-width: 20px;
 }
 .footerText {
     width: 15%;
     margin: auto 0;
-    font-size: 18px;
 }
 footer li {
     display: flex;
     align-items: center;
     column-gap: 5px;
     margin-top: 10px;
-    font-size: 18px;
 }
 footer img {
     width: 34px;
@@ -294,7 +291,6 @@ footer img {
 }
 *::-webkit-scrollbar-thumb {
     background: var(--sb-thumb-color);
-    /* border-radius: 12px; */
     border: transparent;
 }
 .listras {
@@ -314,13 +310,158 @@ footer img {
     z-index: -1;
 }
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+@media (max-width: 1670px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+    p,
+    li {
+        font-size: 0.875rem;
+    }
+}
+@media (max-width: 1450px) {
+    #sobre div {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 4rem;
+    }
+    #sobre img {
+        margin-bottom: 10px;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    #sobre span {
+        max-width: 500px;
+        margin-left: 0px;
+        justify-content: space-evenly;
+    }
+    section {
+        background-position-x: 0, 110%;
+    }
+    #avaliacoes {
+        background-position-y: -30%, 140%;
+        background-position-x: 110%, -8%;
+    }
+    button {
+        margin-top: 25px;
+    }
+}
+@media (max-width: 1100px) {
+    section {
+        background-position-x: 0, 120%;
+    }
+    #avaliacoes {
+        background-position-y: -30%, 140%;
+        background-position-x: 115%, -15%;
+    }
+    #servicos span li {
+        line-height: 1.1;
+    }
+}
+@media (max-width: 980px) {
+    header div {
+        justify-content: space-between;
+        margin: 0 20px;
+    }
+    header ul li a {
+        display: none;
+    }
+    header ul {
+        justify-content: space-between;
+    }
+    button {
+        font-size: 0.875rem;
+        padding: 1rem;
+    }
+    #servicos div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #servicos div span {
+        margin: 0;
+        min-height: 0;
+        line-height: 1.25;
+    }
+    #servicos h2 {
+        margin: 15px 0;
+    }
+    #servicos button {
+        display: none;
+    }
+    #helpUs div{
+        flex-direction: column-reverse;
+    }
+    #helpUs div span{
+        min-height: auto;
+        width: 100%;
+        margin: 25px 0;
+    }
+    form{
+        width: 100%;
+        min-width: 300px;
+        margin: 0 0;
+        padding: 4% 4%;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer h2{
+        text-align: center;
+    }
+    .footerText{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footer-box-1{
+        min-height: 20rem;
+        max-width: 65%;
+    }
+    .redes{
+        min-height: 20rem;
+    }
+}
+@media (max-width: 700px) {
+    section {
+        background-position-x: -25%, 140%;
+    }
+    #avaliacoes {
+        background-position-x: 135%, -35%;
+    }
+}
+@media (max-width: 500px) {
+    #sobre img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+    section {
+        background-position-x: -45%, 170%;
+    }
+    #avaliacoes {
+        background-position-x: 155%, -55%;
+    }
+}
+@media (max-width: 420px) {
+    section {
+        background: none;
+    }
+    #avaliacoes {
+        background: none;
+    }
 }
