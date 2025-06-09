@@ -7,6 +7,12 @@
         <link rel="shortcut icon" href="imgs/logo.svg" type="image/x-icon" />
         <link rel="stylesheet" href="src/reset.css" />
         <link rel="stylesheet" href="src/style.css" />
+        <link
+            href="
+        https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+        "
+            rel="stylesheet"
+        />
     </head>
     <body>
         <header>
@@ -147,18 +153,153 @@
                 </div>
             </section>
             <section id="avaliacoes">
-                <div id="google-reviews"></div>
-                <!-- <h2>Nossas Avaliações</h2>
-                <span>
-                    <img loading="lazy" />
-                    <h3></h3>
-                    <p></p>
-                </span> -->
+                <h2>Nossas Avaliações</h2>
+                <div class="splide">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="splide__slide">
+                                <div class="img_box">
+                                    <div class="avaliacao">
+                                        <div class="avaliador">
+                                            <img
+                                                src="imgs/usuario.png"
+                                                alt="Icone de um usuário que fez a avaliação"
+                                                width="50px"
+                                            />
+                                            <div class="info-avaliador">
+                                                <h2>Paulo Sérgio Santos</h2>
+                                                <br />
+                                                <span class="estrelas"
+                                                    >★★★★★</span
+                                                >
+                                            </div>
+                                        </div>
+
+                                        <p class="texto-avaliacao">
+                                            Segunda vez que conserta meu
+                                            microondas, por defeitos diferentes,
+                                            confio na manutenção e recomendo
+                                            sempre.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                    <div class="img_box">
+                                        <div class="avaliacao">
+                                            <div class="avaliador">
+                                                <img
+                                                    src="imgs/usuario.png"
+                                                    alt="Icone de um usuário que fez a avaliação"
+                                                    width="50px"
+                                                />
+                                                <div class="info-avaliador">
+                                                    <h2>Roberta Tavares</h2>
+                                                    <br />
+                                                    <span class="estrelas"
+                                                        >★★★★★</span
+                                                    >
+                                                </div>
+                                            </div>
+
+                                            <p class="texto-avaliacao">
+                                                Excelente profissional,
+                                                simpático, educado, pontual.
+                                                Verificou rápido o defeito do
+                                                aparelho. Recomendo seu
+                                                trabalho.
+                                            </p>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="splide__slide">
+                                    <div class="img_box">
+                                        <div class="avaliacao">
+                                            <div class="avaliador">
+                                                <img
+                                                    src="imgs/usuario.png"
+                                                    alt="Icone de um usuário que fez a avaliação"
+                                                    width="50px"
+                                                />
+                                                <div class="info-avaliador">
+                                                    <h2>NIVEA NIk</h2>
+                                                    <br />
+                                                    <span class="estrelas"
+                                                        >★★★★★</span
+                                                    >
+                                                </div>
+                                            </div>
+
+                                            <p class="texto-avaliacao">
+                                                Eu já fiz conserto de 3
+                                                micro-ondas, muito profissional
+                                                , honesto, pontual, educado. Eu
+                                                recomendo!!!
+                                            </p>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="splide__slide">
+                                    <div class="img_box">
+                                        <div class="avaliacao">
+                                            <div class="avaliador">
+                                                <img
+                                                    src="imgs/usuario.png"
+                                                    alt="Icone de um usuário que fez a avaliação"
+                                                    width="50px"
+                                                />
+                                                <div class="info-avaliador">
+                                                    <h2>Andréa Nagliati</h2>
+                                                    <br />
+                                                    <span class="estrelas"
+                                                        >★★★★★</span
+                                                    >
+                                                </div>
+                                            </div>
+
+                                            <p class="texto-avaliacao">
+                                                Atendimento top em todos os
+                                                sentidos, principalmente na
+                                                parte técnica e no trato com o
+                                                cliente
+                                            </p>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="splide__slide">
+                                    <div class="img_box">
+                                        <div class="avaliacao">
+                                            <div class="avaliador">
+                                                <img
+                                                    src="imgs/usuario.png"
+                                                    alt="Icone de um usuário que fez a avaliação"
+                                                    width="50px"
+                                                />
+                                                <div class="info-avaliador">
+                                                    <h2>Thais Justino</h2>
+                                                    <br />
+                                                    <span class="estrelas"
+                                                        >★★★★★</span
+                                                    >
+                                                </div>
+                                            </div>
+
+                                            <p class="texto-avaliacao">
+                                                Atencioso, honesto e tem um
+                                                ótimo preço. Muito satisfeita
+                                            </p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section id="helpUs">
                 <div class="main-div">
                     <form
-                        action="https://formsubmit.co/Henriferreira99gmail.com"
+                        action="mail to: Henriferreira99@gmail.com"
                         method="post"
                     >
                         <label for="name">Nome:</label>
@@ -201,13 +342,16 @@
         <div class="gap"></div>
         <footer>
             <section class="footer-box-1">
-                <h2>
-                    Temos a solução para o seu problema!
-                </h2>
+                <h2>Temos a solução para o seu problema!</h2>
                 <ul class="checks">
                     <li>
                         <img loading="lazy" src="imgs/checkbox.svg" alt="" />
-                        <p>Buscamos em domicilio</p> <img class="footer-img" loading="lazy" src="../imgs/truck.png" />
+                        <p>Buscamos em domicilio</p>
+                        <img
+                            class="footer-img"
+                            loading="lazy"
+                            src="../imgs/truck.png"
+                        />
                     </li>
                     <li>
                         <img loading="lazy" src="imgs/checkbox.svg" alt="" />
@@ -248,5 +392,6 @@
             </section>
         </footer>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="src/script.js"></script>
 </html>

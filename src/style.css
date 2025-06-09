@@ -30,7 +30,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: overlay;
-    z-index: 1;
+    z-index: 10;
     font-size: 1.125rem;
 }
 header div {
@@ -158,9 +158,12 @@ span {
 #avaliacoes {
     background-image: url("../imgs/listra3.png"), url("../imgs/listras2.png");
     background-repeat: no-repeat;
-    background-position-y: -30%, 140%;
-    background-position-x: 107%, -5%;
-    height: 47rem;
+    background-position-y: -55%, 160%;
+    background-position-x: 105%, -5%;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 2rem;
+    min-height: 35rem;
     padding: 15px;
 }
 #helpUs {
@@ -256,7 +259,7 @@ footer span {
     justify-content: center;
     align-items: center;
 }
-.footer-img{
+.footer-img {
     max-width: 20px;
 }
 .footerText {
@@ -320,7 +323,44 @@ footer img {
     white-space: nowrap;
     border: 0;
 }
-
+.avaliacao {
+    max-width: 65%;
+    min-height: 110px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 5% 3%;
+    margin: 0 auto;
+}
+.avaliador {
+    display: flex;
+    column-gap: 10px;
+    max-width: 350px;
+    height: 4rem;
+    align-items: center;
+}
+.info-avaliador h2,
+.info-avaliador span {
+    display: inline;
+    margin: 0;
+}
+.estrelas {
+    color: rgb(194, 194, 0);
+}
+.splide__track {
+    justify-content: center;
+}
+.splide__arrows button{
+    opacity: 1;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #BBBCBE;
+}
+.splide__pagination li button{
+    background-color: #d9d9d9;
+}
+.splide__pagination li button.is-active{
+    background-color: #BBBCBE;
+}
 @media (max-width: 1670px) {
     h2 {
         font-size: 1.2rem;
@@ -351,8 +391,7 @@ footer img {
         background-position-x: 0, 110%;
     }
     #avaliacoes {
-        background-position-y: -30%, 140%;
-        background-position-x: 110%, -8%;
+        background-position-x: 110%, -10%;
     }
     button {
         margin-top: 25px;
@@ -362,10 +401,7 @@ footer img {
     section {
         background-position-x: 0, 120%;
     }
-    #avaliacoes {
-        background-position-y: -30%, 140%;
-        background-position-x: 115%, -15%;
-    }
+
     #servicos span li {
         line-height: 1.1;
     }
@@ -401,39 +437,42 @@ footer img {
     #servicos button {
         display: none;
     }
-    #helpUs div{
+    #helpUs div {
         flex-direction: column-reverse;
     }
-    #helpUs div span{
+    #helpUs div span {
         min-height: auto;
         width: 100%;
         margin: 25px 0;
     }
-    form{
+    form {
         width: 100%;
         min-width: 300px;
         margin: 0 0;
         padding: 4% 4%;
     }
-    footer{
+    footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    footer h2{
+    footer h2 {
         text-align: center;
     }
-    .footerText{
+    .footerText {
         width: 100%;
         margin: 0 auto;
         text-align: center;
     }
-    .footer-box-1{
+    .footer-box-1 {
         min-height: 20rem;
         max-width: 65%;
     }
-    .redes{
+    .redes {
         min-height: 20rem;
+    }
+    #avaliacoes {
+        background-position-x: 115%, -15%;
     }
 }
 @media (max-width: 700px) {
@@ -441,10 +480,10 @@ footer img {
         background-position-x: -25%, 140%;
     }
     #avaliacoes {
-        background-position-x: 135%, -35%;
+        background-position-x: 127%, -27%;
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 520px) {
     #sobre img {
         width: 100%;
         height: auto;

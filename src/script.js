@@ -31,3 +31,27 @@ phoneInput.addEventListener("keydown", function (e) {
         }
     }
 });
+var splide = new Splide(".splide", {
+    perPage: 1,
+    gap: "2rem",
+    type:"loop",
+    drag:"free",
+    snap: true,
+    breakpoints: {
+        850: {
+            gap: ".7rem",
+            width: "100%"
+        },
+        480: {
+            gap: ".7rem",
+        },
+    },
+});
+var bar = splide.root.querySelector(".my-slider-progress-bar");
+splide.on("mounted move", function () {
+    var end = splide.Components.Controller.getEnd() + 1;
+    var rate = Math.min((splide.index + 1) / end, 1);
+    bar.style.width = String(100 * rate) + "%";
+});
+
+splide.mount();
