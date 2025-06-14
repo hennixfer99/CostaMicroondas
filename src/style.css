@@ -20,6 +20,7 @@
     --sb-thumb-color: #2f5088b4;
     --sb-size: 8px;
     font-family: "Inter";
+    scroll-behavior: smooth;
 }
 header {
     position: fixed;
@@ -166,6 +167,9 @@ span {
     row-gap: 2rem;
     min-height: 35rem;
     padding: 15px;
+}
+#avaliacoes:target {
+    scroll-margin-top: 5rem;
 }
 #helpUs {
     background: var(--background2);
