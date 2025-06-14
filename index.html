@@ -299,24 +299,30 @@
             <section id="helpUs">
                 <div class="main-div">
                     <form
-                        action="mail to: Henriferreira99@gmail.com"
+                        action="https://formsubmit.co/baiao698@gmail.com"
                         method="post"
                     >
                         <label for="name">Nome:</label>
-                        <input id="name" placeholder="Nome completo" />
+                        <input name="Nome" id="name" placeholder="Nome completo" required/>
                         <label for="phone">Telefone:</label>
                         <input
                             id="phone"
+                            name="Contato"
                             placeholder="(XX)XXXXX-XXXX"
                             type="tel"
                             minlength="15"
                             maxlength="15"
+                            required
                         />
                         <label for="email">E-mail:</label>
-                        <input id="email" placeholder="exemplo@mail.com" />
+                        <input name="Email" id="email" type="email" placeholder="exemplo@mail.com" required/>
                         <label for="message">Mensagem:</label>
-                        <input id="message" placeholder="Mensagem..." />
-                        <button>Enviar</button>
+                        <textarea name="Mensagem" id="message" cols="20" placeholder="Mensagem..." required></textarea>
+                        <input type="hidden" name="_subject" value="Avaliação de usuário">
+                        <input type="text" name="_honey" style="display: none;">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <button type="submit">Enviar</button>
                     </form>
                     <span>
                         <h2>Nos ajude a melhorar!</h2>

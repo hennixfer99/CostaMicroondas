@@ -37,10 +37,10 @@ var splide = new Splide(".splide", {
     type:"loop",
     drag:"free",
     snap: true,
+    width: "100%",
     breakpoints: {
         850: {
             gap: ".7rem",
-            width: "100%"
         },
         480: {
             gap: ".7rem",
