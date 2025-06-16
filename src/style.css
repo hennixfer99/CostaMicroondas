@@ -3,18 +3,18 @@
     --blue: rgb(28, 49, 116, 1);
     --background: linear-gradient(
         145deg,
-        rgba(12, 20, 34, 1) 0%,
+        rgb(255, 255, 255) -300%,
         rgba(47, 79, 136, 1) 100%
     );
     --background2: linear-gradient(
         145deg,
         rgba(47, 79, 136, 1) 0%,
-        rgba(12, 20, 34, 1) 100%
+        rgb(251, 252, 253) 300%
     );
     --backgroundButton: linear-gradient(
         145deg,
         rgba(43, 96, 194, 1) 0%,
-        rgba(27, 54, 102, 1) 100%
+        rgba(27, 54, 102, 1) 300%
     );
     --sb-track-color: #49494965;
     --sb-thumb-color: #2f5088b4;
